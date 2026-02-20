@@ -571,6 +571,14 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-medium-width);
 }
 
+
+/* New for skills list */
+.skills-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: var(--gutter-normal);
+}
+
 /* --------------------------------------- */
 /* ----- Footer ----- */
 /* --------------------------------------- */
