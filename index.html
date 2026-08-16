@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-    <title>
-      Imran Babangida | A Full-Stack Engineer based in Abuja, Nigeria
-    </title>
+    <title>Imran Babangida | Full-Stack Engineer based in Abuja, Nigeria</title>
 
     <meta name="description" content="Imran Babangida — Full-Stack Engineer based in Abuja, Nigeria, building with React, Next.js, TypeScript, Node.js, and PostgreSQL. Creator of FreelanceFlow and DevPortGen.">
     <meta name="keywords" content="Imran Babangida, Full-Stack Engineer, React Developer, Next.js Developer, TypeScript, Node.js, PostgreSQL, Abuja Nigeria, Imrexx Digital Solutions" />
 
-    <!-- Open Graph / social link previews -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://portfolio-omega-beryl-63.vercel.app/">
     <meta property="og:title" content="Imran Babangida | Full-Stack Engineer">
@@ -20,218 +17,231 @@
     <meta property="og:image" content="https://portfolio-omega-beryl-63.vercel.app/images/profile.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="index.css" />
   </head>
-
 <body>
 
-  <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
+  <header class="nav-wrap" id="top">
+    <div class="row nav">
+      <a href="#top" class="nav__mark">IMRAN BABANGIDA</a>
+      <nav>
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#clients" class="nav__link">Skillsets</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+          <li><a href="#work" class="nav__link">Work</a></li>
+          <li><a href="#clients" class="nav__link">Toolkit</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
         </ul>
       </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Imran Babangida</span>
-        </h1>
-        <p>A Full-Stack Engineer based in Abuja, Nigeria
-</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
     </div>
   </header>
 
   <main role="main">
 
-    <!-- ***** Work ***** -->
+    <!-- ***** Hero ***** -->
+    <section class="hero">
+      <div class="row hero__grid">
+        <div class="hero__text" data-reveal>
+          <p class="eyebrow">// Full-Stack Engineer — Abuja, Nigeria</p>
+          <h1 class="heading-primary">Imran<br><span class="name-accent">Babangida</span></h1>
+          <p class="hero__lede">I build <em>shipped</em> products, not portfolio pieces —<br>invoicing platforms, AI tooling, and the occasional obsession.</p>
 
+          <div class="statusline" aria-label="Current status">
+            <span class="statusline__row"><span class="dot" aria-hidden="true"></span>STATUS <span class="statusline__sep">·</span> Open to Remote / Hybrid / Relocation</span>
+            <span class="statusline__row">STACK <span class="statusline__sep">·</span> React · Next.js · TypeScript · Node.js · PostgreSQL</span>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#work" class="btn btn--primary">View My Work</a>
+            <a href="mailto:imrandamare@gmail.com" class="btn btn--ghost">Say Hello →</a>
+          </div>
+        </div>
+
+        <div class="hero__portrait" data-reveal>
+          <img src="./images/profile.jpg" alt="Imran Babangida" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Work ***** -->
     <section class="work" id="work">
       <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
+        <p class="eyebrow" data-reveal data-index="01 /">Selected Work</p>
+        <h2 data-reveal>Things I've Shipped</h2>
 
-          <!-- Each div with the work__box class is a project. -->
+        <div class="work__grid">
 
-          <div class="work__box">
-            <div class="work__text">
+          <article class="project" data-reveal>
+            <div class="project__image-box">
+              <img src="./images/imrexxhub.png" class="project__image" alt="Crypto Hub project screenshot" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="dot dot--live" aria-hidden="true"></span>LIVE</div>
               <h3>Crypto Hub</h3>
-              <p>
-                Imrexx Hub is a central access point that gives you access to different functionalities in on Lukso network.
-              </p>
-              <ul class="work__list">
-                <li>VITE</li>
+              <p>A central access point giving users entry to different functionalities across the Lukso network.</p>
+              <ul class="tags">
+                <li>Vite</li>
                 <li>Ether.js</li>
                 <li>JavaScript</li>
                 <li>React.js</li>
               </ul>
-
-              <div class="work__links">
-                <a href="https://imrexx-hub.vercel.app/" rel="noopener" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Imrexxx-OG/imrexxHub" rel="noopener" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+              <div class="project__links">
+                <a href="https://imrexx-hub.vercel.app/" rel="noopener" target="_blank" class="link__text">Visit Site <span>&rarr;</span></a>
+                <a href="https://github.com/Imrexxx-OG/imrexxHub" rel="noopener" title="View Source Code" target="_blank" class="project__code">
+                  <svg class="project__code-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg><span>Code</span>
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/imrexxhub.png" class="work__image" alt="Crypto Hub project screenshot" loading="lazy" />
-            </div>
-          </div>
+          </article>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>freelanceflow</h3>
-              <p>
-                A full-stack invoicing and client management app for freelancers. It offers features that handles authentication, clients, invoices, analytics, and payments.
-              </p>
-              <ul class="work__list">
+          <article class="project" data-reveal>
+            <div class="project__image-box">
+              <img src="./images/freelanceflow.png" class="project__image" alt="FreelanceFlow project screenshot" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="dot dot--live" aria-hidden="true"></span>LIVE</div>
+              <h3>FreelanceFlow</h3>
+              <p>A full-stack invoicing and client management app for freelancers — authentication, clients, invoices, analytics, and payments.</p>
+              <ul class="tags">
                 <li>React.js</li>
                 <li>Axios</li>
                 <li>Express.js</li>
                 <li>PostgreSQL</li>
               </ul>
-
-              <div class="work__links">
-                <a href="https://freelanceflow-frontend.vercel.app/dashboard" class="link__text" rel="noopener" target="_blank">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Imrexxx-OG/freelanceflow" rel="noopener" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+              <div class="project__links">
+                <a href="https://freelanceflow-frontend.vercel.app/dashboard" class="link__text" rel="noopener" target="_blank">Visit Site <span>&rarr;</span></a>
+                <a href="https://github.com/Imrexxx-OG/freelanceflow" rel="noopener" title="View Source Code" target="_blank" class="project__code">
+                  <svg class="project__code-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg><span>Code</span>
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/freelanceflow.png" class="work__image" alt="FreelanceFlow project screenshot" loading="lazy" />
-            </div>
-          </div>
+          </article>
 
-          <div class="work__box">
-            <div class="work__text">
+          <article class="project" data-reveal>
+            <div class="project__image-box">
+              <img src="./images/devportgen.png" class="project__image" alt="DevPortGen project screenshot" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="dot dot--live" aria-hidden="true"></span>LIVE</div>
               <h3>DevPortGen</h3>
-              <p>
-                A full-stack AI-powered portfolio generator for developers. Features GitHub OAuth, GitHub API integration, AI-generated bios, and instant portfolio publishing.
-              </p>
-              <ul class="work__list">
+              <p>An AI-powered portfolio generator for developers — GitHub OAuth, GitHub API integration, AI-generated bios, instant publishing.</p>
+              <ul class="tags">
                 <li>Next.js</li>
                 <li>TypeScript</li>
                 <li>GitHub REST API</li>
                 <li>PostgreSQL</li>
               </ul>
-
-              <div class="work__links">
-                <a href="https://dev-port-gen.vercel.app/" rel="noopener" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Imrexxx-OG/DevPortGen" rel="noopener" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+              <div class="project__links">
+                <a href="https://dev-port-gen.vercel.app/" rel="noopener" target="_blank" class="link__text">Visit Site <span>&rarr;</span></a>
+                <a href="https://github.com/Imrexxx-OG/DevPortGen" rel="noopener" title="View Source Code" target="_blank" class="project__code">
+                  <svg class="project__code-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg><span>Code</span>
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/devportgen.png" class="work__image" alt="DevPortGen project screenshot" loading="lazy" />
-            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Toolkit / Skills ***** -->
+    <section class="toolkit" id="clients">
+      <div class="row">
+        <p class="eyebrow" data-reveal data-index="02 /">Toolkit</p>
+        <h2 data-reveal>What I Work With</h2>
+
+        <div class="toolkit__grid">
+          <div class="toolkit__group" data-reveal>
+            <h3 class="toolkit__label">Frontend</h3>
+            <ul class="tags tags--lg">
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <div class="toolkit__group" data-reveal>
+            <h3 class="toolkit__label">Backend</h3>
+            <ul class="tags tags--lg">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>PostgreSQL</li>
+              <li>Prisma ORM</li>
+            </ul>
+          </div>
+
+          <div class="toolkit__group" data-reveal>
+            <h3 class="toolkit__label">Practices &amp; Tools</h3>
+            <ul class="tags tags--lg">
+              <li>NextAuth.js &amp; OAuth</li>
+              <li>REST API Integration</li>
+              <li>React Hook Form &amp; Zod</li>
+              <li>Git</li>
+              <li>Vercel Deployments</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ***** Skillsets ***** -->
-
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>My Skillsets</h2>
-        <ul class="skills-list">
-          <li>JavaScript</li>
-          <li>React and Next.js</li>
-          <li>TypeScript for type-safe codebases</li>
-          <li>Tailwind CSS for rapid UI development</li>
-          <li>Node.js for backend logic</li>
-          <li>PostgreSQL via Prisma ORM</li>
-          <li>Secure authentication with NextAuth.js and OAuth</li>
-          <li>API integration (GitHub REST API, Claude AI)</li>
-          <li>Deployments to Vercel</li>
-          <li>Git version control and environment configuration</li>
-          <li>Multi-step forms with React Hook Form and Zod validation</li>
-        </ul>
-      </div>
-    </section>
-
     <!-- ***** About ***** -->
-
     <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>I'm a web developer and designer based out of Abuja, Nigeria. I love building apps that solve real-world problems, and that are delightful to use. My specialities include React JS and Reusable Components.</p>
-            <p>My background is in Information and Communication Technology, and I have a bachelors degree in Computer Science from University of Abuja. I also have 3 adorable cats.</p>
-            <!-- Provide a link to your resume -->
-            <!-- <a href="#" class="btn">My Resume</a> -->
-          </div>
+      <div class="row about__content">
+        <div class="about__text" data-reveal>
+          <p class="eyebrow" data-index="03 /">About</p>
+          <h2>Building things worth using</h2>
+          <p>I'm a full-stack engineer based in Abuja, Nigeria. I build apps that solve real problems and are genuinely enjoyable to use — currently deep in React, Next.js, and PostgreSQL. My focus is React and reusable component systems.</p>
+          <p>My background is in Information and Communication Technology, with a Computer Science degree from the University of Abuja. Off-screen, I've got 3 adorable cats keeping me company.</p>
+        </div>
 
-          <div class="about__photo-container">
-            <img class="about__photo" src="./images/profile.jpg" alt="Imran Babangida" loading="lazy" />
-          </div>
+        <div class="about__stats" data-reveal>
+          <dl class="quickfacts">
+            <div class="quickfacts__item">
+              <dt>Location</dt>
+              <dd>Abuja, Nigeria</dd>
+            </div>
+            <div class="quickfacts__item">
+              <dt>Education</dt>
+              <dd>B.Sc. Computer Science, University of Abuja</dd>
+            </div>
+            <div class="quickfacts__item">
+              <dt>Focus</dt>
+              <dd>React &amp; Reusable Components</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
   </main>
 
   <!-- ***** Contact ***** -->
-
   <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to represent your product or business? or looking for any kind of consultation? or want to ask questions? or have some advice for me or just want to say "Hi 👋" in any case feel free to Let me know. I will do my best to respond back. 😊 The quickest way to reach out to me is via an email.
-        </p>
-        <a href="mailto:imrandamare@gmail.com" class="btn">imrandamare@gmail.com</a>
-      </div>
+    <div class="row" data-reveal>
+      <p class="eyebrow">// Get In Touch</p>
+      <h2>Let's build something.</h2>
+      <p class="contact__lede">Have a role, a project, or just a question? I read every message and reply myself.</p>
+      <a href="mailto:imrandamare@gmail.com" class="contact__email">imrandamare@gmail.com</a>
     </div>
   </section>
 
   <!-- ***** Footer ***** -->
-
   <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
+    <div class="row footer__row">
+      <p class="footer__copy">© 2026 Imran Babangida · Imrexx Digital Solutions</p>
       <ul class="footer__social-links">
-        <!-- <li class="footer__social-link-item">
-          <a href="https://x.com/Imrexx_dev" title="Link to X Profile">
-            <img src="./images/x.png" class="footer__social-image" alt="Twitter">
-          </a>
-        </li> -->
         <li class="footer__social-link-item">
           <a href="https://github.com/Imrexxx-OG" title="Link to Github Profile" target="_blank" rel="noopener">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+            <svg class="footer__social-image" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true" role="img"><title>GitHub</title><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
           </a>
         </li>
-        <!-- <li class="footer__social-link-item">
-          <a href="" title="Link to Telegram Profile">
-            <img src="https://images.app.goo.gl/KAyF55N7LRFnwNcR7" class="footer__social-image" alt="Telegram">
-          </a>
-        </li> -->
         <li class="footer__social-link-item">
           <a href="https://www.linkedin.com/in/imran-babangida" title="Link to LinkedIn Profile" target="_blank" rel="noopener">
-            <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
+            <svg class="footer__social-image" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" role="img"><title>LinkedIn</title><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
           </a>
         </li>
       </ul>
@@ -239,9 +249,8 @@
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <svg class="back-to-top__image" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
   </a>
   <script src="./index.js"></script>
 </body>
-
 </html>
