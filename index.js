@@ -19,25 +19,40 @@ const handleMouseDownOnce = () => {
 window.addEventListener('keydown', handleFirstTab)
 
 /* -----------------------------------------
-  Back to top button
- ---------------------------------------- */
+   Back to top button
+----------------------------------------- */
 
-const backToTopButton = document.querySelector(".back-to-top")
-let isBackToTopRendered = false
+const backToTopButton = document.querySelector(".back-to-top");
+
+let isBackToTopRendered = false;
 
 const alterStyles = (isBackToTopRendered) => {
-  backToTopButton.style.visibility = isBackToTopRendered ? "visible" : "hidden"
-  backToTopButton.style.opacity = isBackToTopRendered ? 1 : 0
-  backToTopButton.style.transform = isBackToTopRendered ? "scale(1)" : "scale(0.8)"
-}
+  backToTopButton.style.visibility = isBackToTopRendered ? "visible" : "hidden";
+  backToTopButton.style.opacity = isBackToTopRendered ? "1" : "0";
+  backToTopButton.style.transform = isBackToTopRendered
+    ? "scale(1)"
+    : "scale(0.8)";
+};
 
 window.addEventListener("scroll", () => {
-  const shouldShow = window.scrollY > 700
+  const shouldShow = window.scrollY > 700;
+
   if (shouldShow !== isBackToTopRendered) {
-    isBackToTopRendered = shouldShow
-    alterStyles(isBackToTopRendered)
+    isBackToTopRendered = shouldShow;
+    alterStyles(isBackToTopRendered);
   }
-})
+});
+
+/* Scroll all the way back to the top */
+
+backToTopButton.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
 
 /* -----------------------------------------
   Scroll reveal — fades/slides sections in as they enter view
